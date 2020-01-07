@@ -17,13 +17,18 @@ const OrderStyled = styled.div`
 const OrderContent = styled(DialogContent)`
     padding: 20px;
     height: 100%;
-
 `
-export function Order() {
-    return <OrderStyled>
-        <OrderContent> Your order...</OrderContent>
+export function Order({ orders }) {
+    return (
+         <OrderStyled>
+        {orders.lenght === 0 ? (
+            <OrderContent> Your order...</OrderContent>
+        ) : (
+            <OrderContent>Found {orders.lenght} orders </OrderContent>
+            )}
         <DialogFooter>
             <ConfirmButton>Checkout</ConfirmButton>
         </DialogFooter>
     </OrderStyled>
+    );
 }
