@@ -7,7 +7,7 @@ export const FoodGrid = styled.div`
     gap: 20px;
 `
 
-export const FoodLabel = styled.div `
+export const FoodLabel = styled.div`
     position: absolute;
     background-color: rgba(256, 256, 256, .8);
     padding: 5px;
@@ -26,6 +26,5 @@ export const Food = styled(Title)`
     &:hover {
         cursor: pointer;
         opacity: 0.7;
-    }
-    
+    }    
 `

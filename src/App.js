@@ -22,8 +22,7 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <Banner />
-      <Menu />
-      <div>Hello Sliceline</div>
+      <Menu />      
     </>
   );
 }
