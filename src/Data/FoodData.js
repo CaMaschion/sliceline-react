@@ -1,5 +1,3 @@
-import { FoodGrid } from "../Menu/FoodGrid";
-
 export const foodItems = [
     {
         name: 'Cheese Pizza',
